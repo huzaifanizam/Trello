@@ -36,7 +36,7 @@ const AddNew = ({type , parentId}) => {
   };
   return (
     <div>
-      <button onClick={openForm}>+ Add New</button>
+      <button onClick={openForm}>+ Add{type?" a card":" another list"}</button>
       {isFormVisible && (
         <form onSubmit={submintHandler} className="mt-3">
           <input value={inputVal} onChange={updateInput} className="w-full h-10 p-2"placeholder={type ? "Enter a title for this card..." : "Enter list title..."}/>

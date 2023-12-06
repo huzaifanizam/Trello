@@ -10,7 +10,7 @@ const List = () => {
       {listItem.map((list) => (
         <div className="p-3  w-1/3" key={list.id}>
           <div className="p-3 bg-gray-200">
-            <div key={list.id} className="">
+            <div key={list.id} className="mt-2 mb-4">
               {list.title}
             </div>
             {list?.children?.length > 0 &&
@@ -18,7 +18,7 @@ const List = () => {
                 <Card key={children.id} cardInfo={children} />
               ))}
             {/* {list.children.length > 0 && list.children.map((children)=><Card key={children.id} cardInfo={children} />)} */}
-            <div className="mt-3">
+            <div className="mt-3 ">
               <AddNew type="card" parentId={list.id} />
             </div>
           </div>
