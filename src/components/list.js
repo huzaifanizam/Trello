@@ -15,7 +15,7 @@ const List = () => {
             </div>
             {list?.children?.length > 0 &&
               list.children.map((children) => (
-                <Card key={children.id} cardInfo={children} />
+                <Card key={children.id } cardInfo={children}  />
               ))}
             {/* {list.children.length > 0 && list.children.map((children)=><Card key={children.id} cardInfo={children} />)} */}
             <div className="mt-3 ">

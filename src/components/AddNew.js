@@ -40,11 +40,11 @@ const AddNew = ({type , parentId}) => {
       {isFormVisible && (
         <form onSubmit={submintHandler} className="mt-3">
           <input value={inputVal} onChange={updateInput} className="w-full h-10 p-2"placeholder={type ? "Enter a title for this card..." : "Enter list title..."}/>
-          <div className="mt-3">
+          <div className="mt-3 ">
             <button onClick={hideForm} className="mr-3">
               Cancel
             </button>
-            <button onClick={submintHandler} className="px-3 py-1 bg-blue-500">
+            <button onClick={submintHandler} className="px-3 py-1 bg-blue-500  ">
               Save
             </button>
           </div>
