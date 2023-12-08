@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="App-header p-3 border bg-blue-100">
+    <header className="App-header p-6 bg-gray-700 text-gray-400">
         Header component
     </header>
   );
